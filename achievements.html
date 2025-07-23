@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Achievements</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #000;
+      color: #F3F4F6;
+      min-height: 100vh;
+      position: relative;
+    }
+    .main-content { position: relative; z-index: 10; }
+    .video-bg, .overlay-bg {
+      position: fixed;
+      top: 0; left: 0; width: 100vw; height: 100vh;
+      pointer-events: none;
+    }
+    .video-bg { z-index: 1; }
+    .overlay-bg {
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(2.5px);
+      z-index: 2;
+    }
+    .center-btns {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 18px;
+      width: 100%;
+      position: relative;
+      z-index: 30;
+    }
+    .btn, a.btn { margin: 0; }
+    .section-title { font-size: 2.2rem; font-weight: 700; }
+    @media (min-width: 768px) { .section-title { font-size: 3rem; } }
+    /* Custom scroll animation (optional, per your original style) */
+    .scroll-animate { opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s; }
+    .scroll-animate.is-visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+ <!-- Video aur Overlay sabse neeche layer par -->
+<video autoplay loop muted playsinline class="fixed top-0 left-0 w-full h-full object-cover opacity-60 z-10">
+  <source src="bg.mp4" type="video/mp4" />
+</video>
+<div class="fixed inset-0 w-full h-full bg-black bg-opacity-70 backdrop-blur-sm z-20"></div>
+
+<div class="relative z-30">
+<section id="achievements" class="py-24 text-center">
+    <h2 class="section-title mb-4 scroll-animate delay-1">Achievements</h2>
+
+    <!-- Achievement 1 -->
+    <div class="py-24 bg-gray-900 bg-opacity-40 overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="scroll-animate md:order-2 delay-2">
+                    <h3 class="text-4xl font-bold mb-4">Honored to be recognized as the Best Video Editor for JMIT Dossier!</h3>
+                    <p class="text-gray-400 text-lg mb-8">
+                        After completing 55 hours of training in video editing, anchoring, content writing, and camera handling organized by the Campus Reporter Club, JMIT.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8">
+                        I was proud to contribute as the Best Editor on the team. <br><br>Grateful to the faculty and mentors for their guidance, and to Director JMIT- MUKAND GROUP for the appreciation.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8">
+                        This recognition fuels my passion to keep learning and delivering high-quality creative work.
+                    </p>
+                </div>
+                <div class="scroll-animate delay-3 md:order-1">
+                    <img src="achievement.jpg" alt="Best Video Editor Award at JMIT" class="rounded-lg shadow-2xl w-full h-auto object-cover" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-container scroll-animate delay-4" style="display: flex; justify-content: space-between; align-items: center; gap: 20px; max-width: 100%; padding: 20px; position: relative; z-index: 10; backdrop-filter: none;">
+        <div style="flex: 1; position: relative; z-index: 10; backdrop-filter: none;">
+            <img src="achievement_1.jpg" alt="Achievement Detail 1" class="rounded-lg shadow-2xl w-full h-auto object-cover" loading="lazy">
+        </div>
+        <div style="flex: 1; position: relative; z-index: 10; backdrop-filter: none;">
+            <img src="achievement_2.jpg" alt="Achievement Detail 2" class="rounded-lg shadow-2xl w-full h-auto object-cover" loading="lazy">
+        </div>
+    </div>
+
+    <!-- Achievement 2 -->
+    <div class="py-24 bg-gray-900 bg-opacity-40 overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                <div class="scroll-animate md:order-2 delay-5">
+                    <h3 class="text-4xl font-bold mb-4">Drone Technology and Its Application Bootcamp By NIT Kurukshetra</h3>
+                    <p class="text-gray-400 text-lg mb-4">
+                        Excited to share that I’ve successfully completed the Drone Technology and Its Application bootcamp under the Capacity Building for Human Resource Development in Drone and Related Technology initiative, organized by National Institute of Technology, Kurukshetra, Haryana at Seth Jai Prakash Mukand Lal Institute of Engineering & Technology (JMIT) Radaur.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-4">
+                        From exploring the technical foundations to real-world applications of drones, the experience was both insightful and future-forward.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-4">
+                        Looking forward to applying these learnings in upcoming projects and diving deeper into drone innovation and emerging tech.
+                    </p>
+                </div>
+                <div class="scroll-animate delay-6 md:order-1">
+                    <img src="drone.jpg" alt="Drone Technology Bootcamp" class="rounded-lg shadow-2xl w-full h-auto object-cover" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-container scroll-animate delay-7" style="display: flex; justify-content: space-between; align-items: center; gap: 8px; max-width: 100%; padding: 8px; position: relative; z-index: 10; backdrop-filter: none;">
+        <div style="flex: 1; position: relative; z-index: 10; backdrop-filter: none;">
+            <img src="drone certificate.jpg" alt="Drone Certificate" class="rounded-lg shadow-2xl w-full h-auto object-cover" loading="lazy">
+        </div>
+        <div style="flex: 1; position: relative; z-index: 10; backdrop-filter: none;">
+            <img src="NIT KKR LOGO.png" alt="NIT KKR Logo" class="rounded-lg shadow-2xl w-full h-auto object-cover" loading="lazy">
+        </div>
+    </div>
+
+    <!-- Achievement 3 -->
+    <div class="py-24 bg-gray-900 bg-opacity-40 overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="scroll-animate md:order-2 delay-8">
+                    <h3 class="text-4xl font-bold mb-4">Unlocking Creativity: Training and Trailer Making Competition</h3>
+                    <p class="text-gray-400 text-lg mb-8">
+                        Grateful to have participated in the unlocking creativity: training and trailer making competition held during the world audio visual entertainment summit 2025 at Jio World Centre, Mumbai.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8">
+                        A big thank you to the Ministry of Information and Broadcasting, FICCI, and Netflix fund for creative equity for this incredible opportunity.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8">
+                        To learn, create, and grow alongside talented storytellers and industry experts.
+                    </p>
+                </div>
+                <div class="scroll-animate delay-9 md:order-1">
+                    <img src="netflix.jpg" alt="Unlocking Creativity Competition" class="rounded-lg shadow-2xl w-full h-auto object-cover" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievement 4 -->
+    <div class="py-24 bg-gray-900 bg-opacity-40 overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="scroll-animate md:order-2 delay-10">
+                    <h3 class="text-4xl font-bold mb-4">Technical Workshop on Artificial Intelligence & Machine Learning</h3>
+                    <p class="text-gray-400 text-lg mb-8">
+                        Thrilled to share that I have successfully completed a technical workshop on Artificial Intelligence & Machine Learning conducted by GeeksforGeeks.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8">
+                        This experience deepened my understanding of cutting-edge technologies that are shaping the future. <br><br>Grateful to Mr. Sandeep Jain and the entire GeeksforGeeks team for curating such a valuable learning journey.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8">
+                        Excited to implement these concepts in real-world projects and continue exploring the vast possibilities of AI & ML.
+                    </p>
+                </div>
+                <div class="scroll-animate delay-11 md:order-1">
+                    <img src="GeeksforGeeks.jpg" alt="AI & ML Workshop" class="rounded-lg shadow-2xl w-full h-auto object-cover" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievement 5 -->
+    <div class="py-24 bg-gray-900 bg-opacity-40 overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="scroll-animate md:order-2 delay-12">
+                    <h3 class="text-4xl font-bold mb-4">Secured 1st position in Creativity Skills at Edupedia, organized by Swaraj Book Club (SBC) at JMIT</h3>
+                    <p class="text-gray-400 text-lg mb-8">
+                        Excited to share that I secured 1st position in Creativity Skills at Edupedia, organized by Swaraj Book Club (SBC) at JMIT on November 14, 2024!
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8">
+                        I showcased my video editing skills, blending storytelling with creativity to create a compelling visual experience. <br><br>This achievement reinforces my passion for creative expression and digital media.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8">
+                        A big thank you to SBC Club & Seth Jai Prakash Mukand Lal Institute of Engineering & Technology (JMIT) for the platform and to everyone who supported me! <br><br>Looking forward to more creative endeavors ahead.
+                    </p>
+                </div>
+                <div class="scroll-animate delay-13 md:order-1" style="max-width: 100%; display: flex; justify-content: center;">
+                    <img src="SBC.jpg" alt="1st Position in Creativity Skills" class="rounded-lg shadow-2xl w-auto h-auto object-contain" style="max-width: 800px; max-height: 600px;" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievement 6 -->
+    <div class="py-24 bg-gray-900 bg-opacity-40 overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="scroll-animate md:order-2 delay-14">
+                    <h3 class="text-4xl font-bold mb-4">Completed 12-hour Outbound Experiential Learning Program on Advanced Leadership Dynamics & Strategic Team Collaboration at Hail Himalayas, Shoghi</h3>
+                    <p class="text-gray-400 text-lg mb-8">
+                        Excited to share that I have successfully completed a 12-hour Outbound Experiential Learning Program on Advanced Leadership Dynamics & Strategic Team Collaboration at Hail Himalayas, Shoghi on October 2-3, 2024.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8">
+                        A huge thank you to TRIPS N TOURISM (TNT) for conducting this insightful corporate training session and to Seth Jai Prakash Mukand Lal Institute of Engineering & Technology (JMIT) for this valuable learning opportunity. <br><br>Throughout this program, I had the chance to enhance key skills such as:
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8">
+                        Collaborative Leadership, Strategic Team Development, Problem-Solving & Decision-Making, Adaptability & Resilience and Effective Communication & Teamwork.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8">
+                        Excited to apply these learnings in real-world challenges!
+                    </p>
+                </div>
+                <div class="scroll-animate delay-15 md:order-1">
+                    <img src="syne quest.jpg" alt="Leadership Program at Hail Himalayas" class="rounded-lg shadow-2xl w-full h-auto object-cover" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-container scroll-animate delay-16" style="display: flex; justify-content: space-between; align-items: center; gap: 20px; max-width: 100%; padding: 20px; position: relative; z-index: 10; backdrop-filter: none;">
+        <div style="flex: 1; position: relative; z-index: 10; backdrop-filter: none;">
+            <img src="syne quest tnt.jpg" alt="Leadership Program Detail 1" class="rounded-lg shadow-2xl w-full h-auto object-cover" loading="lazy">
+        </div>
+        <div style="flex: 1; position: relative; z-index: 10; backdrop-filter: none;">
+            <img src="syne quest team.jpg" alt="Leadership Program Detail 2" class="rounded-lg shadow-2xl w-full h-auto object-cover" loading="lazy">
+        </div>
+    </div>
+
+    <!-- Achievement 7 -->
+    <div class="py-24 bg-gray-900 bg-opacity-40 overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="scroll-animate md:order-2 delay-17">
+                    <h3 class="text-4xl font-bold mb-4">International Women’s Day Celebration Event held on March 7, 2025</h3>
+                    <p class="text-gray-400 text-lg mb-8">
+                        Honored to receive this certificate for my role in the International Women’s Day Celebration event held on March 7, 2025.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8">
+                        I had the incredible opportunity to lead the digital creation for the event, designing all the presentations, managing the backend work (timing of PPTs, coordinating songs), and capturing the videos and photographs to preserve these special moments. <br><br>A huge thank you to my mentor for trusting me with this responsibility and guiding me throughout the process.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8">
+                        It was truly rewarding to contribute to such a meaningful event that celebrates the strength, achievements, and resilience of women around the world.
+                    </p>
+                </div>
+                <div class="scroll-animate delay-18 md:order-1">
+                    <img src="iwd.jpg" alt="International Women’s Day Event" class="rounded-lg shadow-2xl w-full h-auto object-cover" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-container scroll-animate delay-19" style="display: flex; justify-content: space-between; align-items: center; gap: 20px; max-width: 100%; padding: 20px; position: relative; z-index: 10; backdrop-filter: none;">
+        <div style="flex: 1; position: relative; z-index: 10; backdrop-filter: none;">
+            <img src="iwb celebration.jpg" alt="Women’s Day Celebration" class="rounded-lg shadow-2xl w-full h-auto object-cover" loading="lazy">
+        </div>
+        <div style="flex: 1; position: relative; z-index: 10; backdrop-filter: none;">
+            <img src="iwb certificate.jpg" alt="Women’s Day Certificate" class="rounded-lg shadow-2xl w-full h-auto object-cover" loading="lazy">
+        </div>
+    </div>
+
+    <!-- Achievement 8 -->
+    <div class="py-24 bg-gray-900 bg-opacity-40 overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="scroll-animate md:order-2 delay-20">
+                    <h3 class="text-4xl font-bold mb-4">Zest Day 2k24</h3>
+                    <p class="text-gray-400 text-lg mb-8">
+                        Honored to receive this Certificate of Appreciation for organizing Zest Day 2k24 on August 31, 2024!
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8">
+                        As a liaison, I had the privilege of guiding and coordinating an incredible team to ensure the event's success. <br><br>Additionally, as a video editor, I worked on capturing and crafting the highlights that reflected the energy and enthusiasm of the day. <br><br>Proud to have been a part of this amazing journey with Tunic Club, the organizing force behind this impactful district-level inter-school event.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8">
+                        A huge shoutout to my team and mentors for their unwavering support!
+                    </p>
+                </div>
+                <div class="scroll-animate delay-21 md:order-1">
+                    <img src="zest_day_team.jpg" alt="Zest Day Team" class="rounded-lg shadow-2xl w-full h-auto object-cover" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-container scroll-animate delay-22" style="display: flex; justify-content: space-between; align-items: center; gap: 20px; max-width: 100%; padding: 20px; position: relative; z-index: 10; backdrop-filter: none;">
+        <div style="flex: 1; position: relative; z-index: 10; backdrop-filter: none;">
+            <img src="tunic club.jpg" alt="Tunic Club" class="rounded-lg shadow-2xl w-full h-auto object-cover" loading="lazy">
+        </div>
+        <div style="flex: 1; position: relative; z-index: 10; backdrop-filter: none;">
+            <img src="zest_day_certificate.jpg" alt="Zest Day Certificate" class="rounded-lg shadow-2xl w-full h-auto object-cover" loading="lazy">
+        </div>
+    </div>
+
+    <!-- Achievement 9 -->
+    <div class="py-24 bg-gray-900 bg-opacity-40 overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="scroll-animate md:order-2 delay-23">
+                    <h3 class="text-4xl font-bold mb-4">Certificate of Recognition from MY Bharat, Ministry of Youth Affairs and Sports</h3>
+                    <p class="text-gray-400 text-lg mb-8">
+                        Honored to receive a Certificate of Recognition from MY Bharat, Ministry of Youth Affairs and Sports, for contributing my thoughts on the vision of Viksit Bharat.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8">
+                        It is inspiring to be part of an initiative that empowers youth to drive meaningful change and contribute to India’s progress. <br><br>Looking forward to continued learning and impactful engagement.
+                    </p>
+                </div>
+                <div class="scroll-animate delay-24 md:order-1">
+                    <img src="viksit bharat certificate.jpg" alt="Viksit Bharat Certificate" class="rounded-lg shadow-2xl w-full h-auto object-cover" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievement 10 -->
+    <div class="py-24 bg-gray-900 bg-opacity-40 overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="scroll-animate md:order-2 delay-25">
+                    <h3 class="text-4xl font-bold mb-4">Uplifting Students Through Real-World Video Editing Mastery</h3>
+                    <p class="text-gray-400 text-lg mb-8">
+                        Through the impactful 'Earn While Learn' scheme, I have personally mentored and trained students in the art of video editing providing not just knowledge, but real-world earning opportunities.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8">
+                        Guiding students from the basics to advanced editing techniques, my focus has always been on nurturing creativity, technical proficiency, and professional discipline. <br><br>This dynamic initiative empowers every participant to transform their free time into growth helping them acquire industry-relevant skills, build impressive portfolios, and even handle live client projects while still studying.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8">
+                        The journey goes beyond classrooms: students gain confidence, financial independence, and the ability to unlock doors in the fast-growing digital media sector. <br><br>With every lesson, my aim has been to help young minds realize their true potential, foster a sense of achievement, and prepare them for a future where their talent speaks for itself. <br><br>Learn new skills, earn your way, and create a future that’s uniquely yours!
+                    </p>
+                </div>
+                <div class="scroll-animate delay-26 md:order-1">
+                    <img src="earn_while_learn.jpg" alt="Uplifting Students Through Video Editing Mastery" class="rounded-lg shadow-2xl w-full h-auto object-cover" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievement 11 -->
+    <div class="py-24 bg-gray-900 bg-opacity-40 overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="scroll-animate md:order-2 delay-27">
+                    <h3 class="text-4xl font-bold mb-4">The Grind Behind the Glamour</h3>
+                    <p class="text-gray-400 text-lg mb-8">
+                        More than just a certificate. This is a nod to the grind behind the glamour of the "Pro-Fashional Fiesta".
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8">
+                        Proud to have received this appreciation from JMIT, but I want to showcase what my "sincere efforts and active involvement" really looked like. <br><br>My role was to bring the event to your feeds and screens. I handled:
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8">
+                        The Reel Game: From shooting to editing, I created the content that built the hype online. <br><br>The Main Story: I was also in charge of producing the final, main video that captured the essence of the entire event.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8">
+                        It was all about turning moments into memories and raw footage into a compelling story. <br><br>Loved every second of the process, from the chaos of shooting live to the focus of late-night editing sessions. <br><br>Massive thanks to the faculty and the team for the opportunity and the appreciation. This is validation for the passion I put in. On to the next project!
+                    </p>
+                </div>
+                <div class="scroll-animate delay-28 md:order-1">
+                    <img src="pf certificate.png" alt="The Grind Behind the Glamour" class="rounded-lg shadow-2xl w-full h-auto object-cover" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+ <!-- Your JS Animation/Scroll/FAQ (Paste here if needed) -->
+  <script>
+    // Example scroll/animation hook for Tailwind's .scroll-animate
+    document.addEventListener('DOMContentLoaded', function() {
+      const scrollElements = document.querySelectorAll('.scroll-animate');
+      if(scrollElements.length){
+        const observer = new IntersectionObserver(entries=>{
+          entries.forEach(entry=>{
+            if(entry.isIntersecting){ entry.target.classList.add('is-visible'); }
+          });
+        },{threshold:0.1});
+        scrollElements.forEach(el=>observer.observe(el));
+      }
+    });
+  </script>
+</body>
+</html>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

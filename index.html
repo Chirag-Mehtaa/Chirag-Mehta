@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolite - Chirag Mehta</title>
+    
+
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,40 +19,10 @@
             font-family: 'Inter', sans-serif;
             background-color: #000000;
             color: #F3F4F6;
-            cursor: none; /* Hide default cursor */
+          /*  cursor: none; /* Hide default cursor */
         }
 
-        /* --- Custom Cursor --- */
-        #cursor-dot, #cursor-circle {
-            position: fixed;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-            z-index: 9999;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-            transition: transform 0.2s ease-out, width 0.3s ease-in-out, height 0.3s ease-in-out, border-radius 0.3s ease-in-out;
-            will-change: transform, width, height;
-        }
-        #cursor-dot {
-            width: 8px;
-            height: 8px;
-            background-color: white;
-        }
-        #cursor-circle {
-            width: 40px;
-            height: 40px;
-            border: 2px solid rgba(255, 255, 255, 0.5);
-        }
-        #cursor-circle.hover {
-            transform: translate(-50%, -50%) scale(1.5);
-        }
-        #cursor-circle.scrolling {
-            width: 4px;
-            height: 50px;
-            border-radius: 2px;
-        }
-
+        
         /* --- Header Scroll Effect --- */
         #main-header {
             transition: background-color 0.4s ease-in-out, backdrop-filter 0.4s ease-in-out;
@@ -199,7 +168,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Your Site Title</title>
+  <title>Chirag-Mehta</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <!-- Tailwind CSS CDN -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -254,7 +223,7 @@
                 <a href="#projects" class="hover:text-white transition-colors">Projects</a>
                 <a href="#testimonials" class="hover:text-white transition-colors">Testimonials</a>
                 <a href="#contact" class="hover:text-white transition-colors">Contact</a>
-                <a href="#achievements" class="hover:text-white transition-colors">Achievements</a>
+                <a href="achievements.html" class="hover:text-white transition-colors">Achievements</a>
             </nav>
             <a href="https://www.linkedin.com/in/chirag-mehta-a36867344/" class="btn btn-primary hidden md:inline-block">Linkedin Profile</a>
             <button class="md:hidden text-white btn">
@@ -269,36 +238,42 @@
 
 <!-- Hero Section -->
 <main class="pt-32 md:pt-48 pb-24 relative overflow-hidden">
-    <div class="hero-bg"></div>
-    <div class="absolute inset-0 bg-black bg-opacity-70 backdrop-blur-sm"></div>
-    <div class="container mx-auto px-4 relative flex flex-col md:flex-row items-center">
-        <!-- Left side: Photo -->
-        <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
-            <img src="chirag intro.jpg" alt="Your Photo" class="w-full h-full object-cover rounded-lg">
-        </div>
-        <!-- Right side: Text and elements -->
-        <div class="md:w-1/2 text-center">
-            <p class="text-lg font-semibold text-gray-300 mb-2 scroll-animate">From Sketch to Scalable Systems</p>
-            <h2 class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter mb-6 leading-tight scroll-animate delay-1">
-                <span class="block">Software Engineer</span>
-                <span class="block text-center">×</span>
-                <span class="block">Creative Designer</span>
-            </h2>
-            <p class="max-w-xl mx-auto text-gray-400 text-lg mb-10 scroll-animate delay-2">
-                Building Full-Stack Systems That Look as Good as They Work.
-            </p>
-            <div class="flex justify-center items-center space-x-4 scroll-animate delay-3">
-                <a href="#" class="btn btn-primary">What I Offer</a>
-                <a href="#projects" class="btn btn-secondary">Explore UI Experiments</a>
-            </div>
-            <div class="mt-16 text-gray-500 flex justify-center items-center space-x-2 animate-bounce scroll-animate delay-4">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1.707-8.293a1 1 0 00-1.414 1.414l2.414 2.414a1 1 0 001.414 0l2.414-2.414a1 1 0 00-1.414-1.414L11 11.586V7a1 1 0 10-2 0v4.586l-1.707-1.707z" clip-rule="evenodd" />
-                </svg>
-                <span>Explore how I merge design with development</span>
-            </div>
-        </div>
+  <div class="hero-bg"></div>
+  <div class="absolute inset-0 bg-black bg-opacity-70 backdrop-blur-sm"></div>
+  <div class="container mx-auto px-4 relative flex flex-col md:flex-row items-center">
+    <!-- Left side: Photo -->
+    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+      <img
+        src="chirag intro.jpg"
+        alt="Chirag"
+        class="w-full h-full object-cover rounded-lg transition-all duration-700 opacity-0 translate-y-10 scroll-animate delay-0"
+      >
     </div>
+    <!-- Right side: Text and elements -->
+    <div class="md:w-1/2 text-center">
+      <p class="text-lg font-semibold text-gray-300 mb-2 transition-all duration-700 opacity-0 translate-y-10 scroll-animate delay-100">
+        From Sketch to Scalable Systems
+      </p>
+      <h2 class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter mb-6 leading-tight transition-all duration-700 opacity-0 translate-y-10 scroll-animate delay-200">
+        <span class="block">Software Engineer</span>
+        <span class="block text-center">×</span>
+        <span class="block">Creative Designer</span>
+      </h2>
+      <p class="max-w-xl mx-auto text-gray-400 text-lg mb-10 transition-all duration-700 opacity-0 translate-y-10 scroll-animate delay-300">
+        Building Full-Stack Systems That Look as Good as They Work.
+      </p>
+      <div class="flex justify-center items-center space-x-4 transition-all duration-700 opacity-0 translate-y-10 scroll-animate delay-400">
+        <a href="#" class="btn btn-primary">What I Offer</a>
+        <a href="#projects" class="btn btn-secondary">Explore UI Experiments</a>
+      </div>
+      <div class="mt-16 text-gray-500 flex justify-center items-center space-x-2 animate-bounce transition-all duration-700 opacity-0 translate-y-10 scroll-animate delay-500">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1.707-8.293a1 1 0 00-1.414 1.414l2.414 2.414a1 1 0 001.414 0l2.414-2.414a1 1 0 00-1.414-1.414L11 11.586V7a1 1 0 10-2 0v4.586l-1.707-1.707z" clip-rule="evenodd"/>
+        </svg>
+        <span>Explore how I merge design with development</span>
+      </div>
+    </div>
+  </div>
 </main>
 
 
@@ -399,11 +374,11 @@
                 </div>
                 <div class="project-card interactive-card group relative overflow-hidden rounded-lg scroll-animate delay-1">
                     <img src="p2.png" alt="Project 2" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6"><div class="overlay-content opacity-0"><a href="https://www.linkedin.com/posts/chirag-mehta-a36867344_iot-raspberrypi-techfornature-ugcPost-7314011491131703296-8sQP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFZEuwoBiuadXiHFv0UXandWdgHF6tL2gOw" class="text-white text-lg font-semibold flex items-center">🌱 Bridging Nature and Technology – One Emotion at a Time! 🌱<span class="ml-2">&rarr;</span></a></div></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6"><div class="overlay-content opacity-0"><a href="https://www.linkedin.com/posts/chirag-mehta-a36867344_iot-raspberrypi-techfornature-ugcPost-7314011491131703296-8sQP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFZEuwoBiuadXiHFv0UXandWdgHF6tL2gOw" class="text-white text-lg font-semibold flex items-center">Bridging Nature and Technology – One Emotion at a Time!<span class="ml-2">&rarr;</span></a></div></div>
                 </div>
                 <div class="project-card interactive-card group relative overflow-hidden rounded-lg scroll-animate delay-2">
-                    <img src="https://placehold.co/600x800/1a1a1a/ffffff?text=Project+3" alt="Project 3" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6"><div class="overlay-content opacity-0"><a href="#" class="text-white text-lg font-semibold flex items-center">View Casestudy <span class="ml-2">&rarr;</span></a></div></div>
+                    <img src="iot.png" alt="Project 3" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6"><div class="overlay-content opacity-0"><a href="https://www.linkedin.com/posts/chirag-mehta-a36867344_iot-arduino-gesturecontrol-activity-7289342092273733632-tWPu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFZEuwoBiuadXiHFv0UXandWdgHF6tL2gOw" class="text-white text-lg font-semibold flex items-center">IoT-Enabled Gesture-Controlled LED Light Using Arduino Uno <span class="ml-2">&rarr;</span></a></div></div>
                 </div>
                
 
@@ -450,9 +425,9 @@ Feel free to connect with me if you’d like to discuss IoT, robotics, content c
                         <span class="interactive-tag bg-gray-800 px-4 py-2 rounded-full text-sm">C/C++ Programmer</span>
                     </div>
                     <div class="space-y-6">
-                        <div class="flex justify-between items-center p-4 border-b border-gray-700"><span class="font-semibold">Currently</span><span class="text-gray-400">Freelance</span></div>
-                        <div class="flex justify-between items-center p-4 border-b border-gray-700"><span class="font-semibold">Brand Designer</span><span class="text-gray-400">UrbanFit Studio</span><span class="text-gray-500">2023-24</span></div>
-                        <div class="flex justify-between items-center p-4 border-b border-gray-700"><span class="font-semibold">Package Designer</span><span class="text-gray-400">GreenK Studio</span><span class="text-gray-500">2020-22</span></div>
+                        <div class="flex justify-between items-center p-4 border-b border-gray-700"><span class="font-semibold">Currently</span><span class="text-gray-400">Internship</span></div>
+                        <div class="flex justify-between items-center p-4 border-b border-gray-700"><span class="font-semibold">BD Associate</span><span class="text-gray-400">OneStopESG</span><span class="text-gray-500">June 2025</span></div>
+                        <div class="flex justify-between items-center p-4 border-b border-gray-700"><span class="font-semibold">Visual Designer and Creative Writer</span><span class="text-gray-400">Climate Talks</span><span class="text-gray-500">February 2025</span></div>
                     </div>
                 </div>
                 <div class="scroll-animate delay-1 md:order-1">
@@ -464,427 +439,215 @@ Feel free to connect with me if you’d like to discuss IoT, robotics, content c
 
      <!-- Achievements -->
 
-     <!-- Achievement 1 -->
-
-       <section id="Achievements" class="py-24 text-center">
-        <h2 class="section-title mb-4 scroll-animate delay-1">Achievements</h2>
-  <section id="about" class="py-24 bg-gray-900 bg-opacity-40 overflow-hidden">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="scroll-animate md:order-2">
-                    <h3 class="text-4xl font-bold mb-4">Honored to be recognized as the Best Video Editor for JMIT Dossier!</h3>
-                    <p class="text-gray-400 text-lg mb-8">
-                       After completing 55 hours of training in video editing, anchoring, content writing, and camera handling organized by the Campus Reporter Club, JMIT. <br> </p> 
-                        <p class="text-gray-400 text-lg mb-8">I was proud to contribute as the Best Editor on the team.
-
-Grateful to the faculty and mentors for their guidance, and to Director JMIT- MUKAND GROUP for the appreciation.<br></p>
-
- <p class="text-gray-400 text-lg mb-8">
-
- This recognition fuels my passion to keep learning and delivering high-quality creative work.</p>
-
-                    </p>
-
-                <div class="w-full flex flex-col items-center">
-  <hr class="w-full my-4">
-  <p class="text-gray-400 text-lg mb-4 text-center">
-    Date Of Achievement : May 14, 2025
-  </p>
-  <hr class="w-full my-4">
-                </div>
-       
-                </div>
-                <div class="scroll-animate delay-1 md:order-1">
-                    <img src="achievement.jpg" alt="achievement" class="rounded-lg shadow-2xl w-full h-auto object-cover">
-                </div>
-            </div>
-        </div>
-    </section>
-
-     <div class="image-container" style="display: flex; justify-content: space-between; align-items: center; gap: 20px; max-width: 100%; padding: 20px;">
-    <!-- Left side: Original image -->
-    <div class="scroll-animate delay-1 md:order-1" style="flex: 1;">
-        <img src="achievement_1.jpg" alt="Achievement" class="rounded-lg shadow-2xl w-full h-auto object-cover">
-    </div>
     
-    <!-- Right side: Same image (text ki jagah) -->
-    <div class="scroll-animate delay-1 md:order-1" style="flex: 1;">
-        <img src="achievement_2.jpg" alt="Achievement Copy" class="rounded-lg shadow-2xl w-full h-auto object-cover">
-    </div>
-</div>
-    
-<!-- Achievement 2 -->
+<!-- Achievements Section (Copy-Paste This Entire Block Into Your Main Page) -->
+<section id="achievements" class="py-24 text-center relative z-10 overflow-hidden">
+    <h2 class="section-title mb-4">Achievements</h2>  <!-- Removed animation from heading if not needed -->
 
- <section id="about" class="py-24 bg-gray-900 bg-opacity-40 overflow-hidden">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="scroll-animate md:order-2">
-                    <h3 class="text-4xl font-bold mb-4">Drone Technology and Its Application Bootcamp By NIT Kurukshetra</h3>
-                    <p class="text-gray-400 text-lg mb-8">
-                      Excited to share that I’ve successfully completed the Drone Technology and Its Application bootcamp under the Capacity Building for Human Resource Development in Drone and Related Technology initiative, organized by National Institute of Technology, Kurukshetra, Haryana at Seth Jai Prakash Mukand Lal Institute of Engineering & Technology (JMIT) Radaur. <br> </p> 
-                        <p class="text-gray-400 text-lg mb-8">From exploring the technical foundations to real-world applications of drones, 
-the experience was both insightful and future-forward.<br></p>
+    <!-- Floating Cards Container -->
+    <div class="loop-container flex overflow-hidden whitespace-nowrap">
+       <div class="loop-track flex animate-loop">
+    <!-- Original Set of 11 Cards -->
+    <a href="achievements.html#achievement1" class="min-w-[350px] mx-3 block card-animate delay-2 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="achievement.jpg" alt="Best Video Editor Award" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">Best Video Editor for JMIT Dossier</h3>
+    </a>
 
- <p class="text-gray-400 text-lg mb-8">
+    <a href="achievements.html#achievement2" class="min-w-[350px] mx-3 block card-animate delay-3 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="drone certificate.jpg" alt="Drone Technology Bootcamp" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">Drone Technology Bootcamp by NIT Kurukshetra</h3>
+    </a>
 
- Looking forward to applying these learnings in upcoming projects and diving deeper into drone innovation and emerging tech.</p>
+    <a href="achievements.html#achievement3" class="min-w-[350px] mx-3 block card-animate delay-4 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="netflix.jpg" alt="Unlocking Creativity Competition" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">Unlocking Creativity: Trailer Making Competition</h3>
+    </a>
 
-                    </p>
+    <a href="achievements.html#achievement4" class="min-w-[350px] mx-3 block card-animate delay-5 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="GeeksforGeeks.jpg" alt="AI & ML Workshop" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">Technical Workshop on AI & Machine Learning</h3>
+    </a>
 
-                <div class="w-full flex flex-col items-center">
-  <hr class="w-full my-4">
-  <p class="text-gray-400 text-lg mb-4 text-center">
-    Date Of Achievement : May 02, 2025
-  </p>
-  <hr class="w-full my-4">
-</div>
+    <a href="achievements.html#achievement5" class="min-w-[350px] mx-3 block card-animate delay-6 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="SBC.jpg" alt="1st Position in Creativity Skills" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">1st Position in Creativity Skills at Edupedia</h3>
+    </a>
 
-       
-                </div>
-                <div class="scroll-animate delay-1 md:order-1">
-                    <img src="drone.jpg" alt="achievement" class="rounded-lg shadow-2xl w-full h-auto object-cover">
-                </div>
-            </div>
-        </div>
-    </section>
+    <a href="achievements.html#achievement6" class="min-w-[350px] mx-3 block card-animate delay-7 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="syne quest.jpg" alt="Leadership Program at Hail Himalayas" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">Outbound Leadership Program at Hail Himalayas</h3>
+    </a>
 
-    <div class="image-container" style="display: flex; justify-content: space-between; align-items: center; gap: 20px; max-width: 100%; padding: 20px; position: relative; z-index: 10;"></div>
+    <a href="achievements.html#achievement7" class="min-w-[350px] mx-3 block card-animate delay-8 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="iwd.jpg" alt="International Women’s Day Event" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">International Women’s Day Celebration</h3>
+    </a>
 
-    <!-- Centered image below -->
-<div class="centered-image" style="display: flex; justify-content: center; margin-top: 20px; position: relative; z-index: 20;">
-    <img src="drone certificate.jpg" alt="Centered Achievement" style="width: auto; max-width: 600px; height: auto; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); object-fit: contain;">
-</div>
+    <a href="achievements.html#achievement8" class="min-w-[350px] mx-3 block card-animate delay-9 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="zest_day_certificate.jpg" alt="Zest Day 2k24" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">Zest Day 2k24 Organization</h3>
+    </a>
 
+    <a href="achievements.html#achievement9" class="min-w-[350px] mx-3 block card-animate delay-10 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="viksit bharat certificate.jpg" alt="MY Bharat Certificate" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">Certificate from MY Bharat</h3>
+    </a>
 
-<!-- Achievement 3 -->
- 
- <section id="about" class="py-24 bg-gray-900 bg-opacity-40 overflow-hidden">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="scroll-animate md:order-2">
-                    <h3 class="text-4xl font-bold mb-4">Unlocking Creativity: Training and Trailer Making Competition</h3>
-                    <p class="text-gray-400 text-lg mb-8">
-                     Grateful to have participated in the unlocking creativity: training and trailer making competition held during the world audio visual entertainment summit 2025 at Jio World Centre, Mumbai. <br> </p> 
-                        <p class="text-gray-400 text-lg mb-8">A big thank you to the Ministry of Information and Broadcasting, FICCI , and Netflix fund 
-for creative equity for this incredible opportunity.<br></p>
+    <a href="achievements.html#achievement10" class="min-w-[350px] mx-3 block card-animate delay-11 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="earn_while_learn.jpg" alt="Video Editing Mastery" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">Uplifting Students Through Video Editing</h3>
+    </a>
 
- <p class="text-gray-400 text-lg mb-8">
+    <a href="achievements.html#achievement11" class="min-w-[350px] mx-3 block card-animate delay-12 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="pf certificate.png" alt="Pro-Fashional Fiesta" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">The Grind Behind the Glamour</h3>
+    </a>
 
- To learn, create, and grow alongside talented storytellers and industry experts.</p>
+    <!-- Duplicate Set for Seamless Loop (Already Included - No Need to Add) -->
+    <a href="achievements.html#achievement1" class="min-w-[350px] mx-3 block card-animate delay-2 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="achievement.jpg" alt="Best Video Editor Award" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">Best Video Editor for JMIT Dossier</h3>
+    </a>
 
-                    </p>
+    <a href="achievements.html#achievement2" class="min-w-[350px] mx-3 block card-animate delay-3 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="drone certificate.jpg" alt="Drone Technology Bootcamp" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">Drone Technology Bootcamp by NIT Kurukshetra</h3>
+    </a>
 
-                <div class="w-full flex flex-col items-center">
-  <hr class="w-full my-4">
-  <p class="text-gray-400 text-lg mb-4 text-center">
-    Date Of Achievement : May 04, 2025
-  </p>
-  <hr class="w-full my-4">
-</div>
+    <a href="achievements.html#achievement3" class="min-w-[350px] mx-3 block card-animate delay-4 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="netflix.jpg" alt="Unlocking Creativity Competition" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">Unlocking Creativity: Trailer Making Competition</h3>
+    </a>
 
-         </div>
-                <div class="scroll-animate delay-1 md:order-1">
-                    <img src="netflix.jpg" alt="achievement" class="rounded-lg shadow-2xl w-full h-auto object-cover">
-                </div>
-            </div>
-        </div>
-    </section>
+    <a href="achievements.html#achievement4" class="min-w-[350px] mx-3 block card-animate delay-5 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="GeeksforGeeks.jpg" alt="AI & ML Workshop" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">Technical Workshop on AI & Machine Learning</h3>
+    </a>
 
+    <a href="achievements.html#achievement5" class="min-w-[350px] mx-3 block card-animate delay-6 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="SBC.jpg" alt="1st Position in Creativity Skills" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">1st Position in Creativity Skills at Edupedia</h3>
+    </a>
 
+    <a href="achievements.html#achievement6" class="min-w-[350px] mx-3 block card-animate delay-7 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="syne quest.jpg" alt="Leadership Program at Hail Himalayas" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">Outbound Leadership Program at Hail Himalayas</h3>
+    </a>
 
-    <!-- Achievement 4 -->
- 
- <section id="about" class="py-24 bg-gray-900 bg-opacity-40 overflow-hidden">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="scroll-animate md:order-2">
-                    <h3 class="text-4xl font-bold mb-4">Technical Workshop on Artificial Intelligence & Machine Learning</h3>
-                    <p class="text-gray-400 text-lg mb-8">
-                    Thrilled to share that I have successfully completed a technical workshop on Artificial Intelligence & Machine Learning conducted by GeeksforGeeks. <br> </p> 
-                        <p class="text-gray-400 text-lg mb-8"This experience deepened my understanding of cutting-edge technologies 
-that are shaping the future. Grateful to Mr. Sandeep Jain and the entire GeeksforGeeks team for curating such a valuable learning journey.<br></p>
+    <a href="achievements.html#achievement7" class="min-w-[350px] mx-3 block card-animate delay-8 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="iwd.jpg" alt="International Women’s Day Event" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">International Women’s Day Celebration</h3>
+    </a>
 
- <p class="text-gray-400 text-lg mb-8">
+    <a href="achievements.html#achievement8" class="min-w-[350px] mx-3 block card-animate delay-9 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="zest_day_certificate.jpg" alt="Zest Day 2k24" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">Zest Day 2k24 Organization</h3>
+    </a>
 
- Excited to implement these concepts in real-world projects and continue exploring the vast possibilities of AI & ML.</p>
+    <a href="achievements.html#achievement9" class="min-w-[350px] mx-3 block card-animate delay-10 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="viksit bharat certificate.jpg" alt="MY Bharat Certificate" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">Certificate from MY Bharat</h3>
+    </a>
 
-                    </p>
+    <a href="achievements.html#achievement10" class="min-w-[350px] mx-3 block card-animate delay-11 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="earn_while_learn.jpg" alt="Video Editing Mastery" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">Uplifting Students Through Video Editing</h3>
+    </a>
 
-                <div class="w-full flex flex-col items-center">
-  <hr class="w-full my-4">
-  <p class="text-gray-400 text-lg mb-4 text-center">
-    Date Of Achievement : May 01, 2025
-  </p>
-  <hr class="w-full my-4">
-</div>
-
-         </div>
-                <div class="scroll-animate delay-1 md:order-1">
-                    <img src="GeeksforGeeks.jpg" alt="achievement" class="rounded-lg shadow-2xl w-full h-auto object-cover">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-     <!-- Achievement 5 -->
- 
- <section id="about" class="py-24 bg-gray-900 bg-opacity-40 overflow-hidden">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="scroll-animate md:order-2">
-                    <h3 class="text-4xl font-bold mb-4">Secured 1st position in Creativity Skills at Edupedia, organized by Swaraj Book Club (SBC) at JMIT</h3>
-                    <p class="text-gray-400 text-lg mb-8">
-                   Excited to share that I secured 1st position in Creativity Skills at Edupedia, organized by Swaraj Book Club (SBC) at JMIT on November 14, 2024!<br> </p> 
-                        <p class="text-gray-400 text-lg mb-8"I showcased my video editing skills, blending storytelling with creativity to create a compelling visual experience. 
-This achievement reinforces my passion for creative expression and digital media.<br></p>
-
- <p class="text-gray-400 text-lg mb-8">
-
- A big thank you to SBC Club & Seth Jai Prakash Mukand Lal Institute of Engineering & Technology (JMIT) for the platform and to everyone who supported me! Looking forward to more creative endeavors ahead. </p>
-
-                    </p>
-
-                <div class="w-full flex flex-col items-center">
-  <hr class="w-full my-4">
-  <p class="text-gray-400 text-lg mb-4 text-center">
-    Date Of Achievement : November 14, 2024
-  </p>
-  <hr class="w-full my-4">
-</div>
-
-         </div>
-<div class="scroll-animate delay-1 md:order-1" style="max-width: 100%; display: flex; justify-content: center;">
-    <img src="SBC.jpg" alt="achievement" class="rounded-lg shadow-2xl w-auto h-auto object-contain" style="max-width: 800px; max-height: 600px;">
-</div>
+    <a href="achievements.html#achievement11" class="min-w-[350px] mx-3 block card-animate delay-12 bg-gray-800 rounded-lg p-4 shadow-lg">
+        <img src="pf certificate.png" alt="Pro-Fashional Fiesta" class="w-full h-48 object-cover rounded-md mb-2 card-image">
+        <h3 class="text-xl font-bold text-white whitespace-normal">The Grind Behind the Glamour</h3>
+    </a>
 </div>
 </div>
 </section>
 
-
-<!-- Achievement 6 -->
- 
- <section id="about" class="py-24 bg-gray-900 bg-opacity-40 overflow-hidden">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="scroll-animate md:order-2">
-                    <h3 class="text-4xl font-bold mb-4">Completed 12-hour Outbound Experiential Learning Program on Advanced Leadership Dynamics & Strategic Team Collaboration at Hail Himalayas, Shoghi</h3>
-                    <p class="text-gray-400 text-lg mb-8">
-                  Excited to share that I have successfully completed a 12-hour Outbound Experiential Learning Program on Advanced Leadership Dynamics & Strategic Team Collaboration at Hail Himalayas, Shoghi on October 2-3, 2024.<br> </p> 
-                        <p class="text-gray-400 text-lg mb-8"A huge thank you to TRIPS N TOURISM (TNT) for conducting this insightful corporate training session and to Seth Jai Prakash Mukand Lal Institute of Engineering & Technology (JMIT) for this valuable learning opportunity. 
-Throughout this program, I had the chance to enhance key skills such as:<br></p>
-
-
- <p class="text-gray-400 text-lg mb-8">
-
- Collaborative Leadership,
-Strategic Team Development,
-Problem-Solving & Decision-Making,
-Adaptability & Resilience and
-Effective Communication & Teamwork </p>
-
-<p class="text-gray-400 text-lg mb-8">
-
-Excited to apply these learnings in real-world challenges! 
-</p>
-
-
-
-                    
-
-                <div class="w-full flex flex-col items-center">
-  <hr class="w-full my-4">
-  <p class="text-gray-400 text-lg mb-4 text-center">
-    Date Of Achievement : October 03, 2024
-  </p>
-  <hr class="w-full my-4">
-</div>
-
-         </div>
-<div class="scroll-animate delay-1 md:order-1" style="max-width: 100%; display: flex; justify-content: center;">
-    <img src="syne quest.jpg" alt="achievement" class="rounded-lg shadow-2xl w-auto h-auto object-contain" style="max-width: 800px; max-height: 600px;">
-</div>
-</div>
-</div>
-</section>
-
-   <div class="image-container" style="display: flex; justify-content: space-between; align-items: center; gap: 20px; max-width: 100%; padding: 20px; position: relative; z-index: 10;"></div>
-
-    <!-- Centered image below -->
-<div class="centered-image" style="display: flex; justify-content: center; margin-top: 20px; position: relative; z-index: 20;">
-    <img src="syne quest tnt.jpg" alt="Centered Achievement" style="width: auto; max-width: 600px; height: auto; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); object-fit: contain;">
-</div>
-
-<!-- Achievement 7 -->
-
-
-  <section id="about" class="py-24 bg-gray-900 bg-opacity-40 overflow-hidden">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="scroll-animate md:order-2">
-                    <h3 class="text-4xl font-bold mb-4">International Women’s Day Celebration Event held on March 7, 2025</h3>
-                    <p class="text-gray-400 text-lg mb-8">
-                      Honored to receive this certificate for my role in the International Women’s Day Celebration event held on March 7, 2025. <br> </p> 
-                        <p class="text-gray-400 text-lg mb-8">I had the incredible opportunity to lead the digital creation for the event, designing all the presentations, managing the backend work (timing of PPTs, coordinating songs), and capturing the videos and photographs to preserve these special moments.
-
-A huge thank you to my mentor for trusting me with this responsibility and guiding me throughout the process.<br></p>
-
- <p class="text-gray-400 text-lg mb-8">
-
- It was truly rewarding to contribute to such a meaningful event that celebrates the strength, achievements, and resilience of women around the world.</p>
-
-                    </p>
-
-                <div class="w-full flex flex-col items-center">
-  <hr class="w-full my-4">
-  <p class="text-gray-400 text-lg mb-4 text-center">
-    Date Of Achievement : March 07, 2025
-  </p>
-  <hr class="w-full my-4">
-                </div>
-       
-                </div>
-                <div class="scroll-animate delay-1 md:order-1">
-                    <img src="iwd.jpg" alt="achievement" class="rounded-lg shadow-2xl w-full h-auto object-cover">
-                </div>
-            </div>
-        </div>
-    </section>
-
-     <div class="image-container" style="display: flex; justify-content: space-between; align-items: center; gap: 20px; max-width: 100%; padding: 20px;">
-    <!-- Left side: Original image -->
-    <div class="scroll-animate delay-1 md:order-1" style="flex: 1;">
-        <img src="iwb celebration.jpg" alt="Achievement" class="rounded-lg shadow-2xl w-full h-auto object-cover">
-    </div>
-    
-    <!-- Right side: Same image (text ki jagah) -->
-    <div class="scroll-animate delay-1 md:order-1" style="flex: 1;">
-        <img src="iwb certificate.jpg" alt="Achievement Copy" class="rounded-lg shadow-2xl w-full h-auto object-cover">
-    </div>
-</div>
-
-<!-- Achievement 8 -->
-
-  <section id="about" class="py-24 bg-gray-900 bg-opacity-40 overflow-hidden">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="scroll-animate md:order-2">
-                    <h3 class="text-4xl font-bold mb-4"> Zest Day 2k24</h3>
-                    <p class="text-gray-400 text-lg mb-8">
-                     Honored to receive this Certificate of Appreciation for organizing Zest Day 2k24 on August 31, 2024! <br> </p> 
-                        <p class="text-gray-400 text-lg mb-8">As a liaison, I had the privilege of guiding and coordinating an incredible team to ensure the event's success. 
-
-Additionally, as a video editor, I worked on capturing and crafting the highlights that reflected the energy and enthusiasm of the day.
-
-Proud to have been a part of this amazing journey with Tunic Club, the organizing force behind this impactful district-level inter-school event.<br></p>
-
- <p class="text-gray-400 text-lg mb-8">
-
- A huge shoutout to my team and mentors for their unwavering support!</p>
-
-                    </p>
-
-                <div class="w-full flex flex-col items-center">
-  <hr class="w-full my-4">
-  <p class="text-gray-400 text-lg mb-4 text-center">
-    Date Of Achievement : August 31, 2024
-  </p>
-  <hr class="w-full my-4">
-                </div>
-       
-                </div>
-                <div class="scroll-animate delay-1 md:order-1">
-                    <img src="zest_day_team.jpg" alt="achievement" class="rounded-lg shadow-2xl w-full h-auto object-cover">
-                </div>
-            </div>
-        </div>
-    </section>
-
-     <div class="image-container" style="display: flex; justify-content: space-between; align-items: center; gap: 20px; max-width: 100%; padding: 20px;">
-    <!-- Left side: Original image -->
-    <div class="scroll-animate delay-1 md:order-1" style="flex: 1;">
-        <img src="tunic club.jpg" alt="Achievement" class="rounded-lg shadow-2xl w-full h-auto object-cover">
-    </div>
-    
-    <!-- Right side: Same image (text ki jagah) -->
-    <div class="scroll-animate delay-1 md:order-1" style="flex: 1;">
-        <img src="zest_day_certificate.jpg" alt="Achievement Copy" class="rounded-lg shadow-2xl w-full h-auto object-cover">
-    </div>
-</div>
-
-
-
-
-<!-- Achievement 9 -->
-
-  <section id="about" class="py-24 bg-gray-900 bg-opacity-40 overflow-hidden">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="scroll-animate md:order-2">
-                    <h3 class="text-4xl font-bold mb-4"> Certificate of Recognition from MY Bharat, Ministry of Youth Affairs and Sports</h3>
-                    <p class="text-gray-400 text-lg mb-8">
-                     Honored to receive a Certificate of Recognition from MY Bharat, Ministry of Youth Affairs and Sports, for contributing my thoughts on the vision of Viksit Bharat. <br> </p> 
-                        <p class="text-gray-400 text-lg mb-8">It is inspiring to be part of an initiative that empowers youth to drive meaningful change and contribute to India’s progress.  
-
-Looking forward to continued learning and impactful engagement.<br></p>
-
- <p class="text-gray-400 text-lg mb-8">
-
-
-                    </p>
-
-                <div class="w-full flex flex-col items-center">
-  <hr class="w-full my-4">
-  <p class="text-gray-400 text-lg mb-4 text-center">
-    Date Of Achievement : March 02, 2025
-  </p>
-  <hr class="w-full my-4">
-                </div>
-       
-                </div>
-                <div class="scroll-animate delay-1 md:order-1">
-                    <img src="viksit bharat certificate.jpg" alt="achievement" class="rounded-lg shadow-2xl w-full h-auto object-cover">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- CSS for Smooth Horizontal Loop and Enhanced Animations (Add to Your <style> Tag) -->
+<style>
+    .loop-container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .loop-track {
+        display: flex;
+        animation: loop 60s linear infinite;
+    }
+
+    .loop-track:hover {
+        animation-play-state: paused;
+    }
+
+    @keyframes loop {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+
+    /* Enhanced Card with larger block size and no rotation on hover and no tilt on click */
+    .card-animate {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+        transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out, box-shadow 0.3s ease;
+    }
+
+    .card-animate.visible {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    .card-animate:hover {
+        transform: translateY(-5px);  /* Removed rotation */
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Removed click tilt effect */
+    .card-animate:active {
+        animation: none;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
+
+    /* Increase image container height so image is not cut */
+    .card-image {
+        height: 320px;  /* Increased from 48 (12rem) to 320px */
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .card-animate:hover .card-image {
+        transform: scale(1.1);
+        opacity: 0.9;
+    }
+
+    /* Responsive Stacking */
+    @media (max-width: 768px) {
+        .loop-track {
+            animation: none;
+            flex-direction: column;
+        }
+        .card-image {
+            height: auto;
+        }
+    }
+</style>
+
+<!-- JavaScript for Scroll Animations (Add If Not Already Present) -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const elements = document.querySelectorAll('.card-animate');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        elements.forEach(el => observer.observe(el));
+    });
+</script>
 
 
 
@@ -984,7 +747,7 @@ Looking forward to continued learning and impactful engagement.<br></p>
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-4xl md:text-5xl font-bold mb-4 scroll-animate">Available For Work</h2>
             <p class="text-lg text-gray-400 max-w-xl mx-auto mb-8 scroll-animate delay-1">Curious about what we can create together? Let's bring something extraordinary to life!</p>
-            <a href="#" class="btn btn-primary scroll-animate delay-2">Book a Free Call</a>
+            <a href="book-call.html" class="btn btn-primary scroll-animate delay-2">Book a Free Call</a>
         </div>
     </section>
 
@@ -998,8 +761,8 @@ Looking forward to continued learning and impactful engagement.<br></p>
         </div>
         <div class="flex items-center space-x-6">
             <a href="mailto:chirag.mehta.work@gmail.com" class="text-gray-400 hover:text-white transition">chirag.mehta.work@gmail.com</a>
-            <a href="#" class="text-gray-400 hover:text-white transition">GitHub</a>
-            <a href="#" class="text-gray-400 hover:text-white transition">x</a>
+            <a href="https://github.com/Chirag-Mehtaa" class="text-gray-400 hover:text-white transition">GitHub</a>
+            <a href="https://x.com/Chirag_Mehtaaa" class="text-gray-400 hover:text-white transition">x</a>
         </div>
     </div>
 </footer>
@@ -1126,6 +889,8 @@ Looking forward to continued learning and impactful engagement.<br></p>
                 console.error("Custom Cursor Error:", e);
             }
 
+
+ 
         });
     </script>
 </body>
